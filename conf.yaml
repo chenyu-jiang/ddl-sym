@@ -1,0 +1,39 @@
+num_layers: 10
+layer_sizes: 10000
+partition_size: 1000
+enable_profile: false
+
+#duration: 1000000
+num_batches: 100
+
+workers:
+  -   name: worker_1
+      fwd_speed: 50
+      bwd_speed: 20
+  -   name: worker_2
+      fwd_speed: 50
+      bwd_speed: 20
+  -   name: worker_3
+      fwd_speed: 50
+      bwd_speed: 20
+  -   name: worker_4
+      fwd_speed: 50
+      bwd_speed: 20
+
+servers:
+  -   name: server_1
+      agg_speed: 60
+      apply_speed: 30
+      bandwidth: 100
+  -   name: server_2
+      agg_speed: 60
+      apply_speed: 30
+      bandwidth: 100
+  -   name: server_3
+      agg_speed: 60
+      apply_speed: 30
+      bandwidth: 100
+  -   name: server_4
+      agg_speed: 60
+      apply_speed: 30
+      bandwidth: 100
